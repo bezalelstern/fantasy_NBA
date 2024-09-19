@@ -8,11 +8,12 @@ players_bp = Blueprint('players', __name__, url_prefix='/api' )
 
 @players_bp.route('/players', methods=['GET'])
 def get_players():
-    position = 'SG' #request.args.get('position')
-    season = "2024" #request.args.get('season')
+    position =request.args.get('position', default="SG", type=str)
+    season = request.args.get('season', default="2024", type=str)
+    print(position, season)
     query = db.session.query(Stats).join(Player).filter(Stats.position == position, Stats.season == season)
     players = query.all()
-
+    print(players)
     print(type(position), type(season)  )
     results = []
     for stat in players:
@@ -26,13 +27,3 @@ def get_players():
         })
 
     return jsonify(results)
-    # query = db.session.query(Stats)
-    # if position:
-    #     query = query.filter_by(position=position)
-    #
-    # if season:
-    #     query = query.filter_by(season=season)
-    #
-    # players = query.all()
-
-    #return jsonify([player.to_dict() for player in players])

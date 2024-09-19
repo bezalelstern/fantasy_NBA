@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a487a265-5c3d-4ba7-81ce-1fb120798a57" name="Changes" comment="ordered tables">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bluprints/players.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bluprints/teams.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    <list default="true" id="a487a265-5c3d-4ba7-81ce-1fb120798a57" name="Changes" comment="adding flask">
+      <change afterPath="$PROJECT_DIR$/models/team.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/team_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/import_stat.py" beforeDir="false" afterPath="$PROJECT_DIR$/import_stat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluprints/players.py" beforeDir="false" afterPath="$PROJECT_DIR$/bluprints/players.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluprints/teams.py" beforeDir="false" afterPath="$PROJECT_DIR$/bluprints/teams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726726675230</updated>
-      <workItem from="1726726682120" duration="20341000" />
+      <workItem from="1726726682120" duration="24133000" />
     </task>
     <task id="LOCAL‎-00001" summary="import stats &amp; data base">
       <option name="closed" value="true" />
@@ -134,7 +132,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1726745165275</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎-00004" summary="adding flask">
+      <option name="closed" value="true" />
+      <created>1726752228457</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726752228457</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,11 +160,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="import stats &amp; data base" />
     <MESSAGE value="ordered tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="ordered tables" />
+    <MESSAGE value="adding flask" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding flask" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fantasy_NBA$player.coverage" NAME="player Coverage Results" MODIFIED="1726736629143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/fantasy_NBA$main.coverage" NAME="app Coverage Results" MODIFIED="1726751587185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fantasy_NBA$main.coverage" NAME="app Coverage Results" MODIFIED="1726752650114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fantasy_NBA$import_stat.coverage" NAME="import_stat Coverage Results" MODIFIED="1726737009978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

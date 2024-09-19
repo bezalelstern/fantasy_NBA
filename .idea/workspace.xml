@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a487a265-5c3d-4ba7-81ce-1fb120798a57" name="Changes" comment="done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluprints/teams.py" beforeDir="false" afterPath="$PROJECT_DIR$/bluprints/teams.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/team_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/team_service.py" afterDir="false" />
-    </list>
+    <list default="true" id="a487a265-5c3d-4ba7-81ce-1fb120798a57" name="Changes" comment="done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726726675230</updated>
-      <workItem from="1726726682120" duration="25045000" />
+      <workItem from="1726726682120" duration="25463000" />
     </task>
     <task id="LOCAL‎-00001" summary="import stats &amp; data base">
       <option name="closed" value="true" />
@@ -145,7 +141,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1726756157267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎-00006" summary="done">
+      <option name="closed" value="true" />
+      <created>1726757401165</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726757401165</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

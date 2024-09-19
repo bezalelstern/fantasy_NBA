@@ -3,6 +3,7 @@ class Stats(db.Model):
     __tablename__ = 'stats'
     id = db.Column(db.Integer, primary_key=True)
     playerId = db.Column(db.Integer, db.ForeignKey('players.id'), nullable=False)
+    playerName = db.Column(db.String(80), nullable=False)
     team = db.Column(db.String(80), nullable=False)
     position = db.Column(db.String(80), nullable=False)
     season = db.Column(db.String(80), nullable=False)
@@ -11,11 +12,19 @@ class Stats(db.Model):
     threePercent = db.Column(db.Float, nullable=False, default=0.0)
     ATR = db.Column(db.Float, nullable=False)
     PPG_Ratio = db.Column(db.Float, nullable=False)
-    # team_id = db.Column(db.Integer, db.ForeignKey('teams.id'), nullable=True)
 
-    # games = db.relationship('Game', backref=db.backref('players', lazy=True))
-    # goals = db.relationship('Goal', backref=db.backref('players', lazy=True))
-    # assists = db.relationship('Assist', backref=db.backref('players', lazy=True))
-    # clean_sheets = db.relationship('CleanSheet', backref=db.backref('players', lazy=True))
-    # yellow_cards = db.relationship('YellowCard', backref=db.backref('players', lazy=True))
-    # red_cards = db.relationship('RedCard', backref=db.backref('players', lazy=True))
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "playerId": self.playerId,
+            "playerName": self.playerName,
+            "team": self.team,
+            "position": self.position,
+            "season": self.season,
+            "points": self.points,
+            "twoPercent": self.twoPercent,
+            "threePercent": self.threePercent,
+            "ATR": self.ATR,
+            "PPG_Ratio": self.PPG_Ratio
+        }

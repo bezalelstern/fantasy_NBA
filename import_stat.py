@@ -31,7 +31,7 @@ def create_players_table(data):
 def create_stats_table(data):
     for player in data:
         player_id = find_player_id(player["playerName"])
-        db.session.add(Stats(team = player["team"],playerId = player_id, position = player["position"], season = player["season"],
+        db.session.add(Stats(team = player["team"],playerId = player_id,playerName = player["playerName"], position = player["position"], season = player["season"],
                              points = player["points"], twoPercent = player["twoPercent"], threePercent = player["threePercent"],
                              ATR = ca.division(player["assists"], player['turnovers']), PPG_Ratio =ca.ppg_calculate(player ,data)))
         try:

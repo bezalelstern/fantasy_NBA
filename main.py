@@ -10,5 +10,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 with app.app_context():
+    if
     db.create_all()
     get_stats()

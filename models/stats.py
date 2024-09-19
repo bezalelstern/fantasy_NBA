@@ -2,14 +2,13 @@ from db import db
 class Stats(db.Model):
     __tablename__ = 'stats'
     id = db.Column(db.Integer, primary_key=True)
-    #playerId = db.Column(db.Integer, db.ForeignKey('players.id'), nullable=False)
-    #team = db.Column('Team', backref=db.backref('players', lazy=True))
+    playerId = db.Column(db.Integer, db.ForeignKey('players.id'), nullable=False)
     team = db.Column(db.String(80), nullable=False)
     position = db.Column(db.String(80), nullable=False)
     season = db.Column(db.String(80), nullable=False)
-    points = db.Column(db.Integer, nullable=False)
-    twoPercent = db.Column(db.Float, nullable=True)
-    threePercent = db.Column(db.Float, nullable=True)
+    points = db.Column(db.Integer, nullable=False, default=0)
+    twoPercent = db.Column(db.Float, nullable=False, default=0.0)
+    threePercent = db.Column(db.Float, nullable=False, default=0.0)
     ATR = db.Column(db.Float, nullable=False)
     PPG_Ratio = db.Column(db.Float, nullable=False)
     # team_id = db.Column(db.Integer, db.ForeignKey('teams.id'), nullable=True)
